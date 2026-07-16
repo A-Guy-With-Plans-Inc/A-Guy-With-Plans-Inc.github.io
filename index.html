@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Guy With Plans, Inc. | Premium Local-First Software</title>
+    <style>
+        :root {
+            --bg-color: #0A192F;
+            --text-primary: #F8F9FA;
+            --text-secondary: #8892B0;
+            --accent-gold: #D4AF37;
+            --card-bg: #112240;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            margin-bottom: 4rem;
+            border-bottom: 1px solid var(--card-bg);
+            padding-bottom: 2rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.05em;
+            color: var(--text-primary);
+        }
+        .tagline {
+            color: var(--accent-gold);
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 600;
+        }
+        section {
+            margin-bottom: 3.5rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+        h2::after {
+            content: "";
+            display: block;
+            position: relative;
+            width: 100px;
+            height: 1px;
+            margin-left: 20px;
+            background-color: var(--accent-gold);
+        }
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        @media (min-width: 600px) {
+            .grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        .card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 4px;
+            border-left: 3px solid var(--accent-gold);
+        }
+        .card h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.15rem;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.1);
+            color: var(--accent-gold);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            margin-top: 6rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--card-bg);
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-align: center;
+        }
+        .contact-btn {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--accent-gold);
+            border: 1px solid var(--accent-gold);
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+        .contact-btn:hover {
+            background-color: rgba(212, 175, 55, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>A Guy With Plans, Inc.</h1>
+            <div class="tagline">Absolute Data Sovereignty</div>
+        </header>
+
+        <section>
+            <h2>The Paradigm</h2>
+            <p>We build premium, local-first utility applications for the modern privacy era. We believe that your data belongs on your hardware—not harvested inside centralized cloud server pipelines.</p>
+            <p>Our applications require no persistent network dependencies, implement zero intrusive telemetry, and scale with native machine efficiency.</p>
+        </section>
+
+        <section>
+            <h2>Active Architecture</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="badge">Pipeline: RD-ENG-201</div>
+                    <h3>Offline Text Sanctuaries</h3>
+                    <p>Highly compiled, completely isolated sandboxed markdown networks engineered for pure thought organization without corporate network tracking vectors.</p>
+                </div>
+                <div class="card">
+                    <div class="badge">Pipeline: RD-MATH-102</div>
+                    <h3>Deterministic Optimization</h3>
+                    <p>Local micro-economic processing engines running advanced optimization math directly on on-device silicon layers.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Corporate Alignment</h2>
+            <p>Formally structured for maximum operational efficiency and radical execution discipline. Free of institutional bloat and completely optimized for focused development timelines.</p>
+            <a href="mailto:founder@aguywithplans.com" class="contact-btn">Connect for Mentorship</a>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 A Guy With Plans, Inc. All rights reserved.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.75rem;">Registered Domestic C-Corporation | Commonwealth of Kentucky (Filing No. 1594076.09)</p>
+        </footer>
+    </div>
+</body>
+</html>
