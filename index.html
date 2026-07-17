@@ -3,166 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Guy With Plans, Inc. | Premium Local-First Software</title>
+    <title>A Guy With Plans Inc. | Louisville Software Utilities</title>
     <style>
-        :root {
-            --bg-color: #0A192F;
-            --text-primary: #F8F9FA;
-            --text-secondary: #8892B0;
-            --accent-gold: #D4AF37;
-            --card-bg: #112240;
+        /* 
+         * A GUY WITH PLANS, INC. 
+         * Official "The Premium Vault" Design Palette 
+         */
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            background-color: #0A192F; /* Deep Navy Base[span_4](start_span)[span_4](end_span) */ 
+            color: #F8F9FA; /* Platinum High-Contrast Text[span_5](start_span)[span_5](end_span) */
+            text-align: center; 
+            margin: 0; 
+            padding: 50px 20px; 
+            line-height: 1.6; 
         }
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
+        .container { max-width: 650px; margin: 0 auto; }
+        
+        /* Note: For best results on dark navy, ensure 489.png has a transparent background or white/gold lines */
+        img.logo { width: 120px; margin-bottom: 25px; }
+        
+        h1 { font-size: 2.5rem; margin-bottom: 15px; letter-spacing: -0.5px; color: #F8F9FA; }
+        h2 { font-size: 1.2rem; font-weight: normal; color: #F8F9FA; opacity: 0.9; margin-bottom: 40px; }
+        
+        /* Clean Readability Partition[span_6](start_span)[span_6](end_span) */
+        .pitch { 
+            background-color: #F8F9FA; /* Platinum Structure[span_7](start_span)[span_7](end_span) */
+            color: #0A192F; /* Deep Navy Text[span_8](start_span)[span_8](end_span) */
+            padding: 40px 30px; 
+            border-radius: 8px; 
+            margin-bottom: 40px; 
+            text-align: left;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-primary);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            padding: 2rem 1rem;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        header {
-            margin-bottom: 4rem;
-            border-bottom: 1px solid var(--card-bg);
-            padding-bottom: 2rem;
-        }
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            letter-spacing: -0.05em;
-            color: var(--text-primary);
-        }
-        .tagline {
-            color: var(--accent-gold);
-            font-size: 1.1rem;
-            margin-top: 0.5rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            font-weight: 600;
-        }
-        section {
-            margin-bottom: 3.5rem;
-        }
-        h2 {
-            font-size: 1.5rem;
-            color: var(--text-primary);
-            margin-bottom: 1.5rem;
-            display: flex;
-            align-items: center;
-        }
-        h2::after {
-            content: "";
-            display: block;
-            position: relative;
-            width: 100px;
-            height: 1px;
-            margin-left: 20px;
-            background-color: var(--accent-gold);
-        }
-        p {
-            color: var(--text-secondary);
-            margin-bottom: 1.2rem;
-            font-size: 1.05rem;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-        @media (min-width: 600px) {
-            .grid { grid-template-columns: repeat(2, 1fr); }
-        }
-        .card {
-            background-color: var(--card-bg);
-            padding: 1.5rem;
-            border-radius: 4px;
-            border-left: 3px solid var(--accent-gold);
-        }
-        .card h3 {
-            margin-bottom: 0.5rem;
-            font-size: 1.15rem;
-        }
-        .badge {
-            display: inline-block;
-            background: rgba(212, 175, 55, 0.1);
-            color: var(--accent-gold);
-            padding: 0.2rem 0.6rem;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-        footer {
-            margin-top: 6rem;
-            padding-top: 2rem;
-            border-top: 1px solid var(--card-bg);
-            font-size: 0.85rem;
-            color: var(--text-secondary);
+        .pitch h3 { margin-top: 0; text-align: center; color: #0A192F; }
+        
+        /* Functional Accent System for Call-To-Action[span_9](start_span)[span_9](end_span) */
+        a.button { 
+            display: block; 
+            background-color: #D4AF37; /* Muted Gold[span_10](start_span)[span_10](end_span) */
+            color: #0A192F; /* Deep Navy text for contrast[span_11](start_span)[span_11](end_span) */
+            text-decoration: none; 
+            padding: 16px 30px; 
+            font-weight: bold; 
+            border-radius: 6px; 
             text-align: center;
+            margin-top: 25px;
+            transition: background-color 0.2s ease;
         }
-        .contact-btn {
-            display: inline-block;
-            background-color: transparent;
-            color: var(--accent-gold);
-            border: 1px solid var(--accent-gold);
-            padding: 0.75rem 1.5rem;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 600;
-            margin-top: 1rem;
-            transition: all 0.3s ease;
-        }
-        .contact-btn:hover {
-            background-color: rgba(212, 175, 55, 0.1);
-        }
+        a.button:hover { background-color: #b8972e; } /* Slightly darker gold on hover */
+        
+        .footer { margin-top: 60px; font-size: 0.85rem; color: #F8F9FA; opacity: 0.6; }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>A Guy With Plans, Inc.</h1>
-            <div class="tagline">Absolute Data Sovereignty</div>
-        </header>
+        <!-- Logo automatically pulled from your repository -->
+        <img src="489.png" alt="A Guy With Plans Inc. Logo" class="logo">
+        
+        <h1>Stop drowning in manual data entry.</h1>
+        <h2>We build privacy-centric, local-first software utilities that automate the repetitive workflows Louisville businesses hate doing.</h2>
 
-        <section>
-            <h2>The Paradigm</h2>
-            <p>We build premium, local-first utility applications for the modern privacy era. We believe that your data belongs on your hardware—not harvested inside centralized cloud server pipelines.</p>
-            <p>Our applications require no persistent network dependencies, implement zero intrusive telemetry, and scale with native machine efficiency.</p>
-        </section>
+        <div class="pitch">
+            <h3>Claim Your Free Workflow Optimization Audit</h3>
+            <p>Still running your company on a 20-tab spreadsheet? Let's fix that. We offer local Louisville businesses a free, 30-minute consultant-led workflow audit.</p>
+            <p>We will look under the hood of your business and hand you a step-by-step map on how to automate your worst manual process. If you want us to build a custom, local-first tool to handle it, we can. If not, the optimization map is yours to keep for free.</p>
+            
+            <!-- This button automatically opens an email draft to you -->
+            <a href="mailto:founder@aguywithplans.com?subject=Workflow%20Audit%20Request" class="button">Book Your Free Audit</a>
+        </div>
 
-        <section>
-            <h2>Active Architecture</h2>
-            <div class="grid">
-                <div class="card">
-                    <div class="badge">Pipeline: RD-ENG-201</div>
-                    <h3>Offline Text Sanctuaries</h3>
-                    <p>Highly compiled, completely isolated sandboxed markdown networks engineered for pure thought organization without corporate network tracking vectors.</p>
-                </div>
-                <div class="card">
-                    <div class="badge">Pipeline: RD-MATH-102</div>
-                    <h3>Deterministic Optimization</h3>
-                    <p>Local micro-economic processing engines running advanced optimization math directly on on-device silicon layers.</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Corporate Alignment</h2>
-            <p>Formally structured for maximum operational efficiency and radical execution discipline. Free of institutional bloat and completely optimized for focused development timelines.</p>
-            <a href="mailto:founder@aguywithplans.com" class="contact-btn">Connect for Mentorship</a>
-        </section>
-
-        <footer>
-            <p>&copy; 2026 A Guy With Plans, Inc. All rights reserved.</p>
-        </footer>
+        <div class="footer">
+            <p>&copy; 2026 A Guy With Plans Inc.<br>
+            A Registered Kentucky C-Corporation<br>
+            Proudly serving the Louisville Metropolitan Area.</p>
+        </div>
     </div>
 </body>
 </html>
