@@ -3,8 +3,24 @@
   <!-- Homepage -->
   <url>
     <loc>https://aguywithplans.com/</loc>
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://aguywithplans.com/privacy.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Terms of Use -->
+  <url>
+    <loc>https://aguywithplans.com/terms.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
